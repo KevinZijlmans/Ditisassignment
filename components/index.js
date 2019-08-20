@@ -4,6 +4,7 @@ import Feature from './feature'
 import Page from './page'
 import Grid from './grid'
 import Slide from './slide.js'
+import About from './about.js'
 
 
 const Components = {
@@ -12,6 +13,7 @@ const Components = {
   'page': Page,
   'grid': Grid,
   'slide': Slide,
+  'about': About,
 }
 
 export default (blok) => {

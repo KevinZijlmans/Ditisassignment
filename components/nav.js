@@ -31,7 +31,7 @@ export default class extends React.Component {
             </li>
             <li>
               <Link route="/nl/blog"><a className="top-header__link">Dutch</a></Link>
-            </li>
+            </li>          
           </ul>
         </nav>
 
