@@ -5,6 +5,7 @@ import Page from './page'
 import Grid from './grid'
 import Slide from './slide.js'
 import About from './about.js'
+import Something from './something';
 
 
 const Components = {
@@ -14,6 +15,7 @@ const Components = {
   'grid': Grid,
   'slide': Slide,
   'about': About,
+  'something': Something
 }
 
 export default (blok) => {
