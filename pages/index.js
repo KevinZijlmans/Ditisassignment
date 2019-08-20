@@ -14,8 +14,14 @@ export default class extends React.Component {
   static async getInitialProps({ query }) {
     StoryblokService.setQuery(query)
 
+    let [page, settings] = await Promise.all([
+      StoryblokService.get('cdn/stories/home'),
+      StoryblokService.get('cdn/stories/en/settings')
+    ])
+
     return {
-      page: await StoryblokService.get('cdn/stories/home')
+      page,
+      settings
     }
   }
 
@@ -24,10 +30,11 @@ export default class extends React.Component {
   }
 
   render() {
+    const { settings } = this.props
+    const { pageContent } = this.state
     return (
-      <Layout settings={""}>
-        {/* We will define these settings later on */}
-        {Components(this.state.pageContent)}
+      <Layout settings={settings.data.story}>
+        {Components(pageContent)}
       </Layout>
     )
   }
