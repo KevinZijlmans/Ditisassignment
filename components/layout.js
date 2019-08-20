@@ -24,6 +24,7 @@ export default ({ children, settings = {} }) => (
         color: #000;
         margin: 0;
         padding: 0;
+        font-display: optional;
       }
 
       .util__flex {
