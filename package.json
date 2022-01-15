@@ -11,7 +11,7 @@
     "imagemin-mozjpeg": "^8.0.0",
     "js-cookie": "^2.2.1",
     "lqip-loader": "^2.2.0",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "next": "^9.0.4",
     "next-compose-plugins": "^2.2.0",
     "next-ga": "^2.3.4",
